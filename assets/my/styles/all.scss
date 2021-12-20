@@ -1,0 +1,355 @@
+$mainColor: #037540;
+$mainColorSecondary: #fff300;
+$backGroundColor: #ffffff;
+$mainColorText: #000000;
+$mainColorTextSecondary: #02528f;
+$mainColorTextSecondary1: #cb9c48;
+$boxShadow: #22222268;
+$fontSize: 15px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('../../font/Fontawesome/css/all.min.css');
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+#mainHeader {
+    min-height: 120px;
+    background-color: $backGroundColor;
+    #logo {
+        width: 95px;
+        height: auto;
+    }
+    .nav {
+        padding: 60px 0 0 0;
+        .nav-link {
+            color: $mainColorText;
+            text-transform: uppercase;
+            padding: 0 19px;
+        }
+    }
+}
+
+#mainContent {
+    #carousel {
+        min-height: 500px;
+        .carousel-item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    #about {
+        background-image: url("../images/bg-about.png");
+        min-height: 720px;
+        background-position: bottom;
+        .about-background {
+            width: 100%;
+            background-image: url(../images/backgoround-about2.png);
+            background-repeat: no-repeat;
+            img {
+                top: 7px;
+                position: relative;
+                right: -37px;
+            }
+        }
+        .container {
+            opacity: 1;
+            padding: 12px;
+            .title-secondary {
+                color: $mainColorTextSecondary1;
+                font-size: 27px;
+            }
+            h4 {
+                color: $mainColorTextSecondary;
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+        .highlights {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-flex;
+                list-style-type: none;
+                img {
+                    width: 60px;
+                    height: 60px;
+                    top: 25%;
+                    position: absolute;
+                    right: 28%;
+                }
+                .number {
+                    font-size: 24px;
+                    color: $mainColorTextSecondary;
+                    bottom: -43px;
+                    font-weight: 600;
+                    position: absolute;
+                    right: 35%;
+                }
+                .text {
+                    font-size: 23px;
+                    font-weight: 600;
+                    color: $mainColorTextSecondary;
+                    width: 100%;
+                    text-align: center;
+                    bottom: -70px;
+                    position: absolute;
+                    right: -8%;
+                }
+            }
+            .project {
+                background-image: url("../images/Ellipse.png");
+                width: 148px;
+                height: 190px;
+                position: relative;
+                margin-right: 45px;
+            }
+            .emplyee {
+                background-image: url("../images/Ellipse.png");
+                width: 148px;
+                height: 190px;
+                position: relative;
+                margin-right: 45px;
+                margin-left: 45px;
+            }
+            .collaborators {
+                background-image: url("../images/Ellipse.png");
+                width: 148px;
+                height: 190px;
+                margin-left: 45px;
+                position: relative;
+            }
+        }
+    }
+    #projects {
+        min-height: 1090px;
+        width: 100%;
+        background-image: url(../images/backgoround-project.png);
+        .title {
+            h2 {
+                text-align: center;
+                font-size: 30px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $mainColorTextSecondary;
+                background-image: url(../images/line.png);
+                background-position: bottom;
+                background-repeat: no-repeat;
+                padding-bottom: 20px;
+                background-size: 220px;
+            }
+        }
+        .container {
+            .project {
+                margin-bottom: 40px;
+                .project-background {
+                    height: 400px;
+                    overflow: hidden;
+                    position: relative;
+                    border-top-left-radius: 135px;
+                    border-top-right-radius: 135px;
+                }
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+                .project-content {
+                    bottom: 0;
+                    left: 0;
+                    background-size: cover;
+                    width: 100%;
+                    height: 60px;
+                    z-index: 12;
+                    background-image: url(../images/title.png);
+                    position: absolute;
+                    padding: 10px;
+                    .project-category {
+                        color: $backGroundColor;
+                        margin-bottom: 0;
+                    }
+                    h5 {
+                        color: $backGroundColor;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .more {
+            padding-top: 30px;
+            a {
+                text-align: center;
+                display: block;
+                img {
+                    width: 15px;
+                }
+            }
+        }
+    }
+    #posts {
+        .title {
+            padding-top: 140px;
+            h2 {
+                text-align: center;
+                font-size: 30px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $backGroundColor;
+                background-image: url(../images/line1.png);
+                background-position: bottom;
+                background-repeat: no-repeat;
+                padding-bottom: 20px;
+                background-size: 220px;
+            }
+        }
+        background-image: url(../images/post-bg.png);
+        height: 800px;
+        width: 100%;
+        background-size: cover;
+        margin-top: -195px;
+        .panel-default {
+            background-color: $backGroundColor;
+            .panel-thumbnail {
+                .img-fluid {
+                    width: 100%;
+                    border: 3px;
+                }
+            }
+            .img-logo {
+                position: absolute;
+                top: 185px;
+                left: 42%;
+                width: 60px;
+            }
+            .post-content {
+                padding: 6px;
+                h5 {
+                    color: $mainColorTextSecondary;
+                    font-size: 17px;
+                    margin: 6px;
+                }
+                p {
+                    color: $mainColorTextSecondary;
+                    font-size: 12px;
+                }
+                .post-more {
+                    text-align: center;
+                    a {
+                        img {
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-control-prev {
+            left: -130px;
+        }
+        .carousel-control-next {
+            right: -130px;
+        }
+        @media (min-width: 768px) {
+            .carouselPrograms .carousel-inner .active,
+            .carouselPrograms .carousel-inner .active+.carousel-item,
+            .carouselPrograms .carousel-inner .active+.carousel-item+.carousel-item {
+                display: block;
+            }
+            .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+            .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+            .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+                transition: none;
+            }
+            .carouselPrograms .carousel-inner .carousel-item-next,
+            .carouselPrograms .carousel-inner .carousel-item-prev {
+                position: relative;
+                transform: translate3d(0, 0, 0);
+            }
+            .carouselPrograms .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+                position: absolute;
+                top: 0;
+                right: -33.333%;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+            .carouselPrograms .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+            .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item,
+            .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+            .carouselPrograms .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(-100%, 0, 0);
+                visibility: visible;
+            }
+            .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+                position: absolute;
+                top: 0;
+                left: 0%;
+                z-index: -1;
+                display: block;
+                visibility: visible;
+            }
+            .carouselPrograms .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+            .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item,
+            .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+            .carouselPrograms .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+                position: relative;
+                transform: translate3d(100%, 0, 0);
+                visibility: visible;
+                display: block;
+                visibility: visible;
+            }
+        }
+    }
+    #contacts {
+        height: 560px;
+        background-image: url(../images/bn-form.png);
+        padding-top: 35px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        .container {
+            background-image: url(../images/form.png);
+            background-repeat: no-repeat;
+            height: 340px;
+            background-position: 100%;
+            box-shadow: 1px 1px 8px 1px;
+            .col-md-6 {
+                padding-left: 0;
+            }
+            h4 {
+                text-align: center;
+                font-size: 33px;
+                color: $mainColorTextSecondary;
+                padding: 17px 0px 10px;
+            }
+            #formContact {
+                padding: 0 18px;
+                .form-input-custom,
+                textarea {
+                    border-top: 0;
+                    border-right: 0;
+                    border-left: 0;
+                    width: 100%;
+                    border-top: 0;
+                    border-bottom: 2px solid $mainColorTextSecondary;
+                    border-right: 0;
+                    border-left: 0;
+                    background-color: #ffffff1f;
+                    font-size: 14px;
+                    &::placeholder {
+                        color: $mainColorTextSecondary;
+                    }
+                }
+            }
+            #contact-carousel {
+                .carousel-item {
+                    img {
+                        width: 100%;
+                        height: 340px;
+                    }
+                }
+            }
+        }
+    }
+}
